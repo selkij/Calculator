@@ -1,7 +1,7 @@
 def calcul(operation):
     op = operation.replace(' ', '')
     if "*" in operation:
-        return  Multiply(op.split('*'))
+        return Multiply(op.split('*'))
     if "+" in operation:
         return Add(op.split('+'))
     if "-" in operation:
@@ -12,7 +12,9 @@ def calcul(operation):
 
 def Multiply(inputs):
     r = int(inputs[0])
+
     del input[0]
+
     for nbr in inputs:
         r *= int(nbr)
 
@@ -21,7 +23,9 @@ def Multiply(inputs):
 
 def Add(inputs):
     r = int(inputs[0])
+
     del input[0]
+
     for nbr in inputs:
         r += int(nbr)
 
@@ -29,8 +33,13 @@ def Add(inputs):
 
 
 def Divide(inputs):
+    if "0" in inputs:
+        print("0")
+        return 0
+
     r = int(inputs[0])
     del input[0]
+
     for nbr in inputs:
         r /= int(nbr)
 
@@ -40,7 +49,11 @@ def Divide(inputs):
 def Substract(inputs):
     r = int(inputs[0])
     del input[0]
+
     for nbr in inputs:
         r -= int(nbr)
 
     return r
+
+result = calcul("5 / 0")
+print(result)
