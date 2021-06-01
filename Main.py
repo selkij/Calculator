@@ -55,5 +55,6 @@ def Substract(inputs):
 
     return r
 
-result = calcul("5 / 0")
-print(result)
+print("Calculatrice:")
+while True:
+    calcul(input())
