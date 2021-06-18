@@ -14,7 +14,8 @@ def Multiply(inputs):
     r = int(inputs[0])
 
     del input[0]
-
+    
+    #for each numbers in 'inputs', r * 'nbr'
     for nbr in inputs:
         r *= int(nbr)
 
@@ -25,7 +26,8 @@ def Add(inputs):
     r = int(inputs[0])
 
     del input[0]
-
+    
+    #for each numbers in 'inputs', r * 'nbr'
     for nbr in inputs:
         r += int(nbr)
 
@@ -39,7 +41,8 @@ def Divide(inputs):
 
     r = int(inputs[0])
     del input[0]
-
+    
+    #for each numbers in 'inputs', r * 'nbr'
     for nbr in inputs:
         r /= int(nbr)
 
@@ -49,7 +52,8 @@ def Divide(inputs):
 def Substract(inputs):
     r = int(inputs[0])
     del input[0]
-
+    
+    #for each numbers in 'inputs', r * 'nbr'
     for nbr in inputs:
         r -= int(nbr)
 
